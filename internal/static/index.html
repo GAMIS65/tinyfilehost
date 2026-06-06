@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinyfilehost</title>
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="">
+        <input type="file" name="file" id="file-upload">
+        <select name="expiry" id="">
+            <option value="never">Never</option>
+            <option value="visit">After a visit</option>
+            <option value="1-minute">1 minute</option>
+        </select>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
